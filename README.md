@@ -10,7 +10,7 @@ familiar with [Git and Repo](https://source.android.com/setup/build/downloading)
  To initialize your local repository, use command:
 
 ```bash
-repo init -u https://github.com/HorizonDroidLab/manifest.git -b 14 --git-lfs
+repo init -u https://github.com/HorizonDroidLab/manifest.git -b 14-bengal
 ```
 
 Then sync up:

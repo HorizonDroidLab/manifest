@@ -91,6 +91,7 @@
   <project path="device/qcom/sepolicy_vndr/legacy-um" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" revision="lineage-21.0-legacy-um" remote="LineageOS" />
   <project path="device/qcom/sepolicy_vndr/sm8450" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" revision="lineage-21.0-caf-sm8450" remote="LineageOS" />
   <project path="device/qcom/sepolicy_vndr/sm8550" name="LineageOS/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-21.0-caf-sm8550" remote="LineageOS" />
+  <project path="device/qcom/sepolicy_vndr/sm6225" name="HorizonDroidLab/device_qcom_sepolicy_vndr" remote="github" revision="14" />
 
   <!-- External -->
   <project path="external/ant-wireless/ant_client" name="LineageOS/android_external_ant-wireless_ant_client" groups="qcom,sdm660" remote="LineageOS" />
@@ -141,9 +142,19 @@
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm6225/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm6225/Android.mk" />
     <!-- add guards for Pixel kernel modules -->
     <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
   </project>
+  <project path="hardware/qcom-caf/sm6225/audio/agm" name="HorizonDroidLab/vendor_qcom_opensource_agm" remote="github" revision="14" />
+  <project path="hardware/qcom-caf/sm6225/audio/pal" name="HorizonDroidLab/vendor_qcom_opensource_arpal" remote="github" revision="14" />
+  <project path="hardware/qcom-caf/sm6225/audio/primary-hal" name="HorizonDroidLab/hardware_qcom_audio" remote="github" revision="14" />
+  <project path="hardware/qcom-caf/sm6225/data-ipa-cfg-mgr" name="HorizonDroidLab/vendor_qcom_opensource_data-ipa-cfg-mgr" remote="github" revision="14" />
+  <project path="hardware/qcom-caf/sm6225/dataipa" name="HorizonDroidLab/vendor_qcom_opensource_dataipa" remote="github" revision="14" />
+  <project path="hardware/qcom-caf/sm6225/display" name="HorizonDroidLab/hardware_qcom_display" remote="github" revision="14" />
+  <project path="hardware/qcom-caf/sm6225/media" name="HorizonDroidLab/hardware_qcom_media" remote="github" revision="14" />
   <project path="hardware/qcom-caf/msm8953/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,msm8953" revision="lineage-21.0-caf-msm8953" remote="LineageOS" />
   <project path="hardware/qcom-caf/msm8953/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-21.0-caf-msm8953" remote="LineageOS" />
   <project path="hardware/qcom-caf/msm8953/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,msm8953" revision="lineage-21.0-caf-msm8953" remote="LineageOS" />
