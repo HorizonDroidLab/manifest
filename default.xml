@@ -1270,8 +1270,8 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
-  <!-- PixelOS -->
+  <!-- HorizonDroid -->
   <include name="snippets/remove.xml" />
   <include name="snippets/external.xml" />
-  <include name="snippets/custom.xml" />
+  <include name="snippets/horizon.xml" />
 </manifest>

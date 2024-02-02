@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="HorizonDroid"
+           fetch="https://github.com/HorizonDroid-Staging"
+           revision="refs/heads/14" />
+
+  <remote  name="HorizonDroid-Devices"
+           fetch="https://github.com/HorizonDroid-Devices"
+           revision="refs/heads/14" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="bionic" groups="pdk" remote="HorizonDroid" />
+  <project path="manifest" name="manifest" remote="HorizonDroid" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk" remote="HorizonDroid">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="HorizonDroid">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="HorizonDroid" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="HorizonDroid" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="HorizonDroid" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="HorizonDroid" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroid" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="HorizonDroid" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="HorizonDroid" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroid" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="HorizonDroid" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="HorizonDroid" />
+
+  <!-- Vendor -->
+  <project path="vendor/aosp" name="vendor_aosp" remote="HorizonDroid" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="HorizonDroid" />
+
+</manifest>
