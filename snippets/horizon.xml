@@ -5,6 +5,10 @@
            fetch="https://github.com/HorizonDroid-Staging"
            revision="refs/heads/14" />
 
+  <remote  name="HorizonDroid-Gitlab"
+           fetch="https://gitlab.com/horizondroid"
+           revision="refs/heads/14" />
+
   <remote  name="HorizonDroid-Devices"
            fetch="https://github.com/HorizonDroid-Devices"
            revision="refs/heads/14" />
@@ -98,6 +102,7 @@
 
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="HorizonDroid" />
+  <project path="vendor/certification" name="vendor_certification" remote="HorizonDroid-Gitlab" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="HorizonDroid" />
 
 </manifest>
