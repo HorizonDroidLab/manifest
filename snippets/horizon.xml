@@ -97,6 +97,7 @@
 
    <!-- Packages Extras -->
   <project path="packages/apps/ViMusic" name="packages_apps_ViMusic" remote="HorizonDroidLab" />
+  <project path="packages/apps/InnerTune" name="packages_apps_InnerTune" remote="HorizonDroidLab">
   
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroidLab" />
