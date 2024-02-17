@@ -102,6 +102,23 @@
   <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="HorizonDroid-Gitlab" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="HorizonDroidLab" />
 
+  <!-- Pixel 6/6 Pro -->
+  <remote name="aosp-raviole" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-14.0.0_r22" clone-depth="1" />
+  <!-- Pixel 6a -->
+  <remote name="aosp-bluejay" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-14.0.0_r22" clone-depth="1" />
+
+  <!-- Pixel 7/7 Pro -->
+  <remote name="aosp-pantah" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-14.0.0_r22" clone-depth="1" />
+  <!-- Pixel 7a -->
+  <remote name="aosp-lynx" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-14.0.0_r22" clone-depth="1" />
+  <!-- Pixel Tablet -->
+  <remote name="aosp-tangorpro" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-14.0.0_r22" clone-depth="1" />
+  <!-- Pixel Fold -->
+  <remote name="aosp-felix" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-14.0.0_r22" clone-depth="1" />
+
+  <!-- Pixel 8/8 Pro -->
+  <remote name="aosp-shusky" fetch="https://android.googlesource.com" review="android-review.googlesource.com" revision="refs/tags/android-14.0.0_r25" clone-depth="1" />
+
   <!-- Pixel 6/6 Pro/6a/7/7 Pro/7a/Tablet/Fold kernel modules -->
   <project path="kernel/google/gs201/private/devices/google/bluejay" name="kernel/devices/google/bluejay" groups="pixel-extra" remote="aosp" revision="refs/tags/android-14.0.0_r0.44" />
   <project path="kernel/google/gs201/private/devices/google/felix" name="kernel/devices/google/felix" groups="pixel-extra" remote="aosp" revision="refs/tags/android-14.0.0_r0.44" />
