@@ -83,6 +83,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroidLab" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="HorizonDroidLab" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="HorizonDroidLab" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="HorizonDroidLab" />
 
    <!-- Packages Extras -->
   <project path="packages/apps/ViMusic" name="packages_apps_ViMusic" remote="HorizonDroidLab" />
