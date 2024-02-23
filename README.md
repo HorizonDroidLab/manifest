@@ -1,6 +1,6 @@
 # HorizonDroid
 
-![HorizonDroid](https://github.com/HorizonDroid-13/.github/blob/main/Vega%20Update%20ROM%20A14.png)
+![HorizonDroid](https://github.com/ryzenforce990/ryzenforce990/blob/main/6253773744107534195_119.jpg)
 
 Getting Started
 ---------------
