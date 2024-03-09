@@ -16,6 +16,7 @@
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="HorizonDroidLab" />
   <project path="manifest" name="manifest" remote="HorizonDroidLab" />
+  <project path="horizon-maintainers" name="horizon-maintainers" remote="HorizonDroidLab" />
 
   <!-- Build -->
   <project path="build/make" name="build" groups="pdk" remote="HorizonDroidLab">
