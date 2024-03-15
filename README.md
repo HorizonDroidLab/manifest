@@ -1,6 +1,6 @@
 # HorizonDroid
 
-![HorizonDroid](https://github.com/ryzenforce990/ryzenforce990/blob/main/6253773744107534195_119.jpg)
+![HorizonDroid](https://github.com/HorizonDroidLab/.github/blob/main/New%20Project%20%5BEB204AC%5D.png)
 
 Getting Started
 ---------------
