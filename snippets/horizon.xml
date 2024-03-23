@@ -35,13 +35,33 @@
 
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="HorizonDroidLab" />
+  <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="HorizonDroidLab" />
+
+  <!-- External -->
+  <project path="external/cronet" name="external_cronet" groups="pdk" remote="HorizonDroidLab" />
+  <project path="external/avb" name="external_avb" groups="pdk" remote="HorizonDroidLab" />
+  <project path="external/dtc" name="external_dtc" groups="pdk" remote="HorizonDroidLab" />
+  <project path="external/exfatprogs" name="external_exfatprogs" remote="HorizonDroidLab" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="HorizonDroidLab" />
+  <project path="external/libcxx" name="external_libcxx" groups="pdk" remote="HorizonDroidLab" />
+  <project path="external/libnl" name="external_libnl" groups="pdk" remote="HorizonDroidLab" />
+  <project path="external/libvpx" name="external_libvpx" groups="pdk" remote="HorizonDroidLab" />
+  <project path="external/webp" name="external_webp" groups="pdk,qcom_msm8x26" remote="HorizonDroidLab" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="HorizonDroidLab" />
+  <project path="external/zstd" name="external_zstd" remote="HorizonDroidLab" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="HorizonDroidLab" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroidLab" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="HorizonDroidLab" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="HorizonDroidLab" />
 
   <!-- Hardware -->
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="qcom" remote="HorizonDroidLab" />
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="qcom" remote="HorizonDroidLab" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" groups="qcom" remote="HorizonDroidLab" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="HorizonDroidLab" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" groups="qcom,kailua-vendor" remote="HorizonDroidLab" revision="14-caf" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="HorizonDroidLab" >
     <!-- Add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
@@ -86,6 +106,8 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="HorizonDroidLab" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="HorizonDroidLab" />
   <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="HorizonDroidLab" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="HorizonDroidLab" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="HorizonDroidLab" />
 
    <!-- Packages Extras -->
   <project path="packages/apps/ViMusic" name="packages_apps_ViMusic" remote="HorizonDroidLab" />
@@ -95,6 +117,16 @@
   <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroidLab" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="HorizonDroidLab" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/bpf" name="system_bpf" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/extras" name="system_extras" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/libhidl" name="system_libhidl" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/logging" name="system_logging" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/media" name="system_media" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/security" name="system_security" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/libziparchive" name="system_libziparchive" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="HorizonDroidLab" />
 
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="HorizonDroidLab" />
