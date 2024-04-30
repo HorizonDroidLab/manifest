@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="HorizonDroidLab"
+           fetch="https://github.com/HorizonDroidLab"
+           revision="refs/heads/udc" />
+
+  <remote  name="PixelOS"
+           fetch="https://github.com/PixelOS-AOSP"
+           revision="refs/heads/fourteen" />
+
+  <remote  name="PixelOS-Gitlab"
+           fetch="https://gitlab.com/PixelOS-AOSP"
+           revision="refs/heads/fourteen" />
+
+  <remote  name="HorizonDroid-Gitlab"
+           fetch="https://gitlab.com/horizondroid"
+           revision="refs/heads/14" />
+
+  <remote  name="HorizonDroid-Devices"
+           fetch="https://github.com/HorizonDroid-Devices"
+           revision="refs/heads/14" />
+
+  <!-- Rootdir -->
+  <project path="bionic" name="bionic" groups="pdk" remote="HorizonDroidLab" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="PixelOS" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk" remote="HorizonDroidLab">
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="HorizonDroidLab">
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+
+  <!-- External -->
+  <project path="external/jemalloc_new" name="external_jemalloc_new" groups="pdk" remote="PixelOS" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="HorizonDroidLab" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroidLab" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="HorizonDroidLab" />
+
+  <!-- Hardware -->
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="HorizonDroidLab" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroidLab" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="HorizonDroidLab" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="HorizonDroidLab" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="HorizonDroidLab" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="HorizonDroidLab" />
+
+  <!-- Begin Extras -->
+
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="HorizonDroidLab" />
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="PixelOS" />
+
+  <!-- Packages -->
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="HorizonDroidLab" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="HorizonDroidLab" />
+
+  <!-- Vendor -->
+  <project path="vendor/aosp" name="vendor_aosp" remote="HorizonDroidLab" />
+  <project path="vendor/addons" name="vendor_addons" remote="HorizonDroidLab" />
+  <project path="vendor/microsoft" name="vendor_microsoft" remote="HorizonDroidLab" />
+  <project path="vendor/certification" name="vendor_certification" remote="HorizonDroid-Gitlab" />
+  <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="HorizonDroid-Gitlab" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="HorizonDroidLab" />
+
+</manifest>
