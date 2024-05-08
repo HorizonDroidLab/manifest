@@ -64,6 +64,8 @@
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="HorizonDroidLab" />
 
   <!-- Begin Extras -->
+  <project path="packages/apps/ViMusic" name="packages_apps_ViMusic" remote="HorizonDroidLab" />
+  <project path="packages/apps/InnerTune" name="packages_apps_InnerTune" remote="HorizonDroidLab" />
 
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="HorizonDroidLab" />
