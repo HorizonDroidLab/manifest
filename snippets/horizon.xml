@@ -54,7 +54,6 @@
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroidLab" />
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="HorizonDroidLab" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="HorizonDroidLab" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="HorizonDroidLab" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="HorizonDroidLab" />
@@ -62,6 +61,7 @@
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroidLab" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="HorizonDroidLab" />
 
   <!-- Begin Extras -->
 
