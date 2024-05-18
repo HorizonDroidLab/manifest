@@ -114,9 +114,9 @@
   <project path="packages/apps/InnerTune" name="packages_apps_InnerTune" remote="HorizonDroidLab" />
   
   <!-- System -->
-  <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroidLab" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="HorizonDroidLab" />
-  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="HorizonDroidLab" />
+  <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroidLab" revision="udc"/>
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="HorizonDroidLab" revision="udc" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="HorizonDroidLab" revision="udc" />
   <project path="system/bpf" name="system_bpf" groups="pdk" remote="HorizonDroidLab" />
   <project path="system/extras" name="system_extras" groups="pdk" remote="HorizonDroidLab" />
   <project path="system/libhidl" name="system_libhidl" groups="pdk" remote="HorizonDroidLab" />
