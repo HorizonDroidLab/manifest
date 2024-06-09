@@ -46,15 +46,15 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="HorizonDroidLab" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroidLab" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroidLab" revision="14" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="HorizonDroidLab" />
 
   <!-- Hardware -->
   <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="HorizonDroidLab" />
 
   <!-- Packages -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroidLab" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="HorizonDroidLab" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroidLab" revision="14" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk" remote="HorizonDroidLab" revision="14" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="HorizonDroidLab" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="HorizonDroidLab" />
 
@@ -64,24 +64,24 @@
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="HorizonDroidLab" />
 
   <!-- Begin Extras -->
-  <project path="packages/apps/ViMusic" name="packages_apps_ViMusic" remote="HorizonDroidLab" />
-  <project path="packages/apps/InnerTune" name="packages_apps_InnerTune" remote="HorizonDroidLab" />
+  <project path="packages/apps/ViMusic" name="packages_apps_ViMusic" remote="HorizonDroidLab" revision="14" />
+  <project path="packages/apps/InnerTune" name="packages_apps_InnerTune" remote="HorizonDroidLab" revision="14" />
 
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="HorizonDroidLab" />
   <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="PixelOS" />
 
   <!-- Packages -->
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="HorizonDroidLab" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="HorizonDroidLab" />
+  <!-- <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="HorizonDroidLab" /> -->
+  <!-- <project path="packages/apps/Updates" name="packages_apps_Updates" remote="HorizonDroidLab" /> -->
 
   <!-- Vendor -->
-  <project path="vendor/aosp" name="vendor_aosp" remote="HorizonDroidLab" />
-  <project path="vendor/addons" name="vendor_addons" remote="HorizonDroidLab" />
-  <project path="vendor/microsoft" name="vendor_microsoft" remote="HorizonDroidLab" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="HorizonDroidLab" revision="14" />
+  <project path="vendor/addons" name="vendor_addons" remote="HorizonDroidLab" revision="14" />
+  <project path="vendor/microsoft" name="vendor_microsoft" remote="HorizonDroidLab" revision="14" />
   <project path="vendor/certification" name="vendor_certification" remote="HorizonDroid-Gitlab" />
   <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="HorizonDroid-Gitlab" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="HorizonDroidLab" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="HorizonDroidLab" revision="14" />
 
   <!-- Pixel 6/6 Pro/6a/7/7 Pro/7a/Tablet/Fold kernel modules -->
   <project path="kernel/google/gs201/private/devices/google/bluejay" name="kernel/devices/google/bluejay" groups="pixel-extra" remote="aosp" revision="refs/tags/android-14.0.0_r0.44" />
