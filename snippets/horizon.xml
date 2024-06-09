@@ -72,8 +72,8 @@
   <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="PixelOS" />
 
   <!-- Packages -->
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="HorizonDroidLab" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="HorizonDroidLab" />
+  <!-- <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="HorizonDroidLab" /> -->
+  <!-- <project path="packages/apps/Updates" name="packages_apps_Updates" remote="HorizonDroidLab" /> -->
 
   <!-- Vendor -->
   <project path="vendor/aosp" name="vendor_aosp" remote="HorizonDroidLab" revision="14" />
