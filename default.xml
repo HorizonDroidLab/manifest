@@ -1413,6 +1413,7 @@
 
   <include name="snippets/remove.xml" />
   <include name="snippets/custom.xml" />
+  <include name="snippets/horizon.xml" />
   <include name="snippets/lineage.xml" />
 
 </manifest>
