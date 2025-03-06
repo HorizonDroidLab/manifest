@@ -34,6 +34,7 @@
   <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroid" />
 
   <!-- Vendor -->
+  <project path="vendor/addons" name="vendor_addons" remote="HorizonDroid" />
   <project path="vendor/horizon" name="vendor_horizon" remote="HorizonDroid" />
 
 </manifest>
