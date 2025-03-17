@@ -1,5 +1,7 @@
 # HorizonDroid
 
+![HorizonDroid](https://github.com/HorizonDroidLab/.github/blob/main/Aquila_Update%20ROM.png)
+
 ## Getting Started
 
 To get started with the HorizonDroid sources, you'll need to get
