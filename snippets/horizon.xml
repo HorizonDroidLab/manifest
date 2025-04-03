@@ -24,7 +24,9 @@
   </project>
 
   <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
 
   <!-- Packages -->
   <project path="packages/apps/HorizonLab" name="packages_apps_HorizonLab" remote="HorizonDroid" />
@@ -35,6 +37,7 @@
 
   <!-- Vendor -->
   <project path="vendor/addons" name="vendor_addons" remote="HorizonDroid" />
+  <project path="vendor/certification" name="vendor_certification" remote="HorizonDroid" />
   <project path="vendor/horizon" name="vendor_horizon" remote="HorizonDroid" />
 
 </manifest>
