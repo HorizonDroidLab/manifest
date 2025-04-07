@@ -41,5 +41,6 @@
   <project path="vendor/addons" name="vendor_addons" remote="HorizonDroid" />
   <project path="vendor/certification" name="vendor_certification" remote="HorizonDroid" />
   <project path="vendor/horizon" name="vendor_horizon" remote="HorizonDroid" />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="HorizonDroid" />
 
 </manifest>
