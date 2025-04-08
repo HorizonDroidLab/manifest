@@ -5,6 +5,10 @@
            fetch="https://github.com/HorizonDroidLab"
            revision="refs/heads/fifteen" />
 
+  <remote  name="HorizonDroid-Gitlab"
+           fetch="https://gitlab.com/horizondroid"
+           revision="refs/heads/fifteen" />
+
     <!-- Rootdir -->
   <project path="manifest" name="manifest" remote="HorizonDroid" />
   <project path="horizon-maintainers" name="horizon-maintainers" remote="HorizonDroid" />
@@ -27,17 +31,21 @@
   <project path="frameworks/av" name="frameworks_av" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="HorizonDroid" />
 
   <!-- Packages -->
   <project path="packages/apps/HorizonLab" name="packages_apps_HorizonLab" remote="HorizonDroid" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="HorizonDroid" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="HorizonDroid" />
   <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="HorizonDroid" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="HorizonDroid" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="HorizonDroid" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="HorizonDroid" />
 
   <!-- Vendor -->
+  <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="HorizonDroid-Gitlab" />
   <project path="vendor/addons" name="vendor_addons" remote="HorizonDroid" />
   <project path="vendor/certification" name="vendor_certification" remote="HorizonDroid" />
   <project path="vendor/horizon" name="vendor_horizon" remote="HorizonDroid" />
