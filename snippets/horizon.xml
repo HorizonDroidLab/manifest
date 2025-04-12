@@ -9,9 +9,10 @@
            fetch="https://gitlab.com/horizondroid"
            revision="refs/heads/fifteen" />
 
-    <!-- Rootdir -->
+  <!-- Rootdir -->
   <project path="manifest" name="manifest" remote="HorizonDroid" />
   <project path="horizon-maintainers" name="horizon-maintainers" remote="HorizonDroid" />
+  <project path="build/release" name="build_release" groups="pdk,tradefed,sysui-studio" remote="HorizonDroid" />
 
   <!-- Build -->
   <project path="build/make" name="build" groups="pdk" remote="HorizonDroid">
